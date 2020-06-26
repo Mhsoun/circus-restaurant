@@ -1,0 +1,77 @@
+/*Color palette
+    #E9253C Dark red (Alizarin Crimson)
+    #F5E6E8 Light pink (Pot Pourri)
+    #0C0A3E Dark blue (Abbey)
+    #EEF4D4 Light green (Tahuna Sands)
+    #0F1108 Dark brown (Marshland?)
+    #25271E Brown (Log Cabin)
+*/
+    body{
+    margin: 0;
+    padding :0;
+    background-color: #eae2d6 ;
+    }
+
+    .header{
+    display:flex;
+    background-color: #e9253c;
+
+    }
+    .heading{
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        margin-top: 1.5%;
+        font-family: fantasy;
+      
+    }
+    .navbar{
+        height: 60px;
+        width: 100%;
+        position: fixed;
+        z-index: 1;
+        border-radius: 0px;
+        padding: 0px 100px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        box-sizing: border-box;
+        background-color:#ee5869;
+    }
+
+    .navbar-nav .nav-item{
+        font-size:x-large;
+    }
+    .navbar-custom .navbar-nav .nav-link {
+        color:black;
+    }
+  
+    .navbar-custom .nav-item.active .nav-link,
+    .navbar-custom .nav-item:hover .nav-link {
+    color: #ffffff;
+    background-color: #333;
+    }
+
+    /* img{
+        width:6%;
+    } */
+
+
+
+    .about-h1 {
+        padding: 10px;
+      text-align: center;
+      background-color: #eae2d6;
+      color: black;
+    }
+
+       
+    .about-section p{
+      padding: 10px;
+      text-align: center;
+      background-color: #a9baa0;
+      color: black;
+    }
+
+    .about-section h1{
+        background-color:#ee5869;
+        color:black;
+    }
