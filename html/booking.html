@@ -6,122 +6,165 @@
         <link rel="icon" type="image/png" href="#">
     
         <link rel="stylesheet" href="../css/fontawesome.all.min.css">
-        <link rel="stylesheet" href="../css/bootstrap.min.css">
         <link rel="stylesheet" href="../css/jquery-ui.min.css">
-        <link rel="stylesheet" href="../css/booking.css">
+        <link rel="stylesheet" href="../css/bootstrap.min.css">
         <link rel="stylesheet" href="../css/home.css">
+        <link rel="stylesheet" href="../css/ordering.css">
+        <link rel="stylesheet" href="../css/booking.css">
         <title>Menu</title>
     </head>
-<body>
+    
     <body>
 
         <!-- HEADER-->
         <div class="container">
             <div class="header container">
-                <img src="../imgs/logo.png" alt="logo" class="m-2">
+                <img src="../imgs/logo.png" alt="logo" class="m-2" width="8%" height="8%">
                 <h1 class="mb-0 heading"> CIRCUS RESTAURENT</h1>
         </div>
         <!-- END OF HEADER-->    
-        
+    
         <!-- Navigation -->
         <nav class="navbar navbar-expand-lg navbar-dark navbar-custom container navbar-top" id="fixedNav">
         
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-custom" 
-                aria-controls="navbar-custom" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-custom" 
+            aria-controls="navbar-custom" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
             
-                <div class="collapse navbar-collapse" id="navbar-custom">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="home.html">Home</a>
-                        </li>
-                        <li class="nav-item ">
-                            <a class="nav-link" href="ordering.html">Menu</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" href="booking.html">Booking</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="">About Us</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Contact Us</a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-        </div>
+            <div class="collapse navbar-collapse" id="navbar-custom">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="home.html">Home</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="ordering.html">Menu</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="booking.html">Booking</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contactus">Contact Us</a>
+                    </li>
+                    <li>
+                        <div>
+                            <label for="cartToggle" class="toggleCart btnStyle btnStyle2"><i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                                <i class="fa fa-circle" aria-hidden="true"></i>
+                                <span class="num"></span>
+                            </label>
+                        </div> 
+                    </li>
+                </ul>
+            </div>
+        </nav>
         <!-- End of Navigation -->
     
-    <h1 class="bookingheading mt-5 mb-3">Welcome to Circus Show</h1>
-    
-    <div class="container text-center">
-       <div class="booking-form pt-4">
-           
-        <form>
-            <div class="form-row justify-content-center">
-                <div class="col-md-4 mb-3 ">
-                  <label><b>Select Date</b></label>
-                  <input type="text" name="date"class="form-control datepicker" value="yy-mm-dd" autocomplete="off">
-                </div>
-                <div class="col-md-4 mb-3">
-                    <label><b>Select Time</b></label>
-                    <select class="form-control" >
-                      <option>Select Time</option>
-                      <option>15:00</option>
-                      <option>17:00</option>
-                      <option>19:00</option>
-                      <option>21:00</option>
-                    </select>
-                 
-                </div>
-                </div>
-            <div class="form-row justify-content-center">
-              <div class="col-md-4 mb-3">
-                <label><b>Select Adult</b></label>
-                  <input type="number" class="form-control" placeholder="select" max="15" min="1">
-                </div>
-              <div class="col-md-4 mb-3 ">
-                <label><b>Select Child</b></label>
-                <input type="number" class="form-control" placeholder="select" max="15" min="0">
-                
-              </div>
-              </div>
-              <div class="form-row justify-content-center">
-                <div class="col-md-4 mb-3">
-                    <label><b>First Name</b></label>
-                    <input type="text" class="form-control"  placeholder="First Name">
-                </div>
-                <div class="col-md-4 mb-3">
-                    <label><b>Last name</b></label>
-                <input type="text" class="form-control"placeholder="Last name">
-                </div>
-                </div>
-                <div class="form-row justify-content-center">
-                    <div class="col-md-4 mb-3">
-                        <label><b>Email</b></label>
-                        <input type="email" class="form-control"placeholder="name@example.com">
-                  </div>
-                    <div class="col-md-4 mb-3">
-                      <label><b>Phone No</b></label>
-                      <input type="text" class="form-control"placeholder="x-xxxxxxxxx">
-                    </div>
-                    </div>
-                   
-                    <div class="text-center pt-4"> 
-            <button class="btn btn-primary mb-5" type="Book" >Book</button>
-                    </div>
-          </form>
-    
-    </div>
-    <script>$(disableDates())</script>
+        <input type="checkbox" id="cartToggle" name="toggle" />
 
-   
-<script src="../js/fontawesome.all.min.js"></script>
-<script src="../js/jquery.min.js"></script>
-<script src="../js/jquery-ui.min.js"></script>
-<script src="../js/bootstrap.min.js"></script></body>
-<script src="../js/custom.js"></script>
-</body>
+
+        <h1 class="bookingheading mt-5 mb-3">Welcome to Circus Show</h1>
+    
+        <div class="container text-center">
+            <div class="booking-form pt-4">
+           
+                <form>
+                    <div class="form-row justify-content-center">
+                        <div class="col-md-4 mb-3 ">
+                        <label><b>Select Date</b></label>
+                        <input type="text" name="date"class="form-control datepicker" value="yy-mm-dd" autocomplete="off">
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <label><b>Select Time</b></label>
+                            <select class="form-control" >
+                            <option>Select Time</option>
+                            <option>15:00</option>
+                            <option>17:00</option>
+                            <option>19:00</option>
+                            <option>21:00</option>
+                            </select>
+                        
+                        </div>
+                    </div>
+                    <div class="form-row justify-content-center">
+                        <div class="col-md-4 mb-3">
+                            <label><b>Select Adult</b></label>
+                            <input type="number" class="form-control" placeholder="select" max="15" min="1">
+                        </div>
+                        <div class="col-md-4 mb-3 ">
+                            <label><b>Select Child</b></label>
+                            <input type="number" class="form-control" placeholder="select" max="15" min="0">
+                            
+                        </div>
+                    </div>
+                    <div class="form-row justify-content-center">
+                        <div class="col-md-4 mb-3">
+                            <label><b>First Name</b></label>
+                            <input type="text" class="form-control"  placeholder="First Name">
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <label><b>Last name</b></label>
+                            <input type="text" class="form-control"placeholder="Last name">
+                        </div>
+                    </div>
+                    <div class="form-row justify-content-center">
+                        <div class="col-md-4 mb-3">
+                            <label><b>Email</b></label>
+                            <input type="email" class="form-control"placeholder="name@example.com">
+                        </div>
+                            <div class="col-md-4 mb-3">
+                                <label><b>Phone No</b></label>
+                                <input type="text" class="form-control"placeholder="x-xxxxxxxxx">
+                            </div>
+                    </div>
+                        
+                    <div class="text-center pt-4"> 
+                        <button class="btn btn-primary mb-5" type="Book" >Book</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <!-- FOOTER -->
+        <div class="container  footer text-center">
+            <div class="row container">
+                <div class="col-md-4 container">
+                    <h4 class="mt-4" id="contactus">Contact Details</h4>
+                    <h6 class="mt-4 ">Circus Restaurant</h6>
+                    <p><i class="fa fa-map-marker mr-1"></i> Hamngatan 20, 111 47Stockholm </p>
+                    <p>08- xxx xx xx | 070- xxx xx xx</p>
+                    <p><i class=" mr-1 fa fa-envelope-square"></i>contact@circus.com</p>
+                </div>            
+                
+                <div class="col-md-4 container">
+                    <h4 class="mt-4 mb-4">Opening Hour </h4>
+                    <p><b>Mon - Wed : </b> 11:00am - 11:00pm</p>
+                    <p><b>Thu - Sat : </b> 11:00am - 01:00am</p> 
+                    <P><strong> Sunday : </strong> 11:00am - 11:00pm</P>
+                    <h6 class="">Circus Show </h6>
+                        <p><b>Fri - Sat : </b> 03:00pm - 11:00pm</p>
+                </div>            
+                <div class="col-md-4 container">
+                    <h4 class="mt-4">Find Us</h4>
+                    <iframe class="container" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2034.997421175111!2d18.06722811604554!3d59.332996881660044!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465f9d5c224bc4b7%3A0x1d4a08aa83e1808b!2sHamngatan%2020%2C%20111%2047%20Stockholm!5e0!3m2!1sen!2sse!4v1593161745606!5m2!1sen!2sse"
+                    width="343" height="172" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                </div> 
+            </div>         
+                <div class="row">
+                    <div class="col container footer-bottom">
+                <p> <i>Copyright © 2020 Circus  Restaurant. All Rights Reserved. @ Team 3 @ Lexicon AB</i></p>
+                    </div>
+                </div>
+        </div>
+        <!-- END OF FOOTER -->
+    
+        <script src="../js/fontawesome.all.min.js"></script>
+        <script src="../js/jquery.min.js"></script>
+        <script src="../js/jquery-ui.min.js"></script>
+        <script src="../js/bootstrap.min.js"></script>
+        <script src="../js/custom.js"></script>
+        <script> $(disableDates()) </script>
+    </body>
 </html>

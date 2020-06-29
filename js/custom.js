@@ -1,18 +1,19 @@
 $(document).ready(function() {
   
 
-	$( "a" ).click(function( event ) {
-  		event.preventDefault();
-	});
+	
+// 	$( "a" ).click(function( event ) {
+// 		event.preventDefault();
+//   });
 
 	var numOfOrders = 0;
 	$(".num").text(numOfOrders);
 
 	// hide dialogs on start
-	$("#thanksMessage, #checkOrderHamburger, #checkOrderMacaroni, #checkOrderPizza, #checkOrderSalad, #checkOrderSpaghetti, #checkOrderRisotto, #finishOrderDialog").hide();
+	$("#thanksMessage, #checkOrderHamburger, #checkOrderChickenCurry, #checkOrderLammMalaba, #checkOrderMixVegetariskBalti, #checkOrderNaanbrod, #checkOrderRisotto, #finishOrderDialog").hide();
 
 	// open dialog on click
-	$("#addToCartHamburger").on("click", function () {
+	$("#addToCartTikkaMasala").on("click", function () {
 		$("#checkOrderHamburger").dialog({
 				hide: "blind",
             	show : "blind",
@@ -20,39 +21,39 @@ $(document).ready(function() {
               closeText: "X"});
 	})
 
-	$("#addToCartMacaroni").on("click", function () {
-		$("#checkOrderMacaroni").dialog({
+	$("#addToCartChickenCurry").on("click", function () {
+		$("#checkOrderChickenCurry").dialog({
 				hide: "blind",
             	show : "blind",
             	width: "400px",
               closeText: "X"});
 	})
 
-	$("#addToCartPizza").on("click", function () {
-		$("#checkOrderPizza").dialog({
+	$("#addToCartLammMalaba").on("click", function () {
+		$("#checkOrderLammMalaba").dialog({
 				hide: "blind",
             	show : "blind",
             	width: "400px",
               closeText: "X"});
 	})
 
-	$("#addToCartSalad").on("click", function () {
-		$("#checkOrderSalad").dialog({
+	$("#addToCartMixVegetariskBalti").on("click", function () {
+		$("#checkOrderMixVegetariskBalti").dialog({
 				hide: "blind",
             	show : "blind",
             	width: "400px",
               closeText: "X"});
 	})
 
-	$("#addToCartSpaghetti").on("click", function () {
-		$("#checkOrderSpaghetti").dialog({
+	$("#addToCartNaanbrod").on("click", function () {
+		$("#checkOrderNaanbrod").dialog({
 				hide: "blind",
             	show : "blind",
             	width: "400px",
               closeText: "X"});
 	})
 
-	$("#addToCartRisotto").on("click", function () {
+	$("#addToCartVitloksnaan").on("click", function () {
 		$("#checkOrderRisotto").dialog({
 				hide: "blind",
             	show : "blind",
@@ -208,18 +209,13 @@ $(document).ready(function() {
 		}
 	})
 
-
-
-    function disableDates(){
-    $('.datepicker').datepicker({
-    daysOfWeekDisabled: [0,1,2,3,4]
-    });
-    $(".btn").click(function(){
-        alert("Booking is confirmed");
-      });
-      
-
-}
 })
 
 
+function disableDates(){
+	$('.datepicker').datepicker({
+	daysOfWeekDisabled: [0,1,2,3,4]
+	});
+	$(".btn").click(function(){
+		alert("Booking is confirmed");
+	  });}

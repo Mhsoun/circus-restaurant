@@ -15,33 +15,47 @@
     .header{
     display:flex;
     background-color: #e9253c;
-
     }
-    .heading{
+
+    .heading {
         font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         margin-top: 1.5%;
         font-family: fantasy;
-      
     }
+
+    .h-blue, h4{
+        background-color:  #0C0A3E;
+        color: #EEF4D4;
+    }
+
+    .s-green{
+        background-color:  #EEF4D4;
+        color: #0C0A3E;
+        padding: 10px;
+        text-align: center;
+        height: 80vh;
+    }
+
     .navbar{
         height: 60px;
         width: 100%;
-        position: fixed;
-        z-index: 1;
+        /* position: fixed;*/
+        z-index: 10;
         border-radius: 0px;
         padding: 0px 100px;
         display: flex;
         justify-content: space-between;
         align-items: center;
         box-sizing: border-box;
-        background-color:#ee5869;
+        background-color:#e9253c;
+        color: #0C0A3E;
     }
 
     .navbar-nav .nav-item{
         font-size:x-large;
     }
     .navbar-custom .navbar-nav .nav-link {
-        color:black;
+        color:#0C0A3E;
     }
   
     .navbar-custom .nav-item.active .nav-link,
@@ -50,28 +64,22 @@
     background-color: #333;
     }
 
-    /* img{
-        width:6%;
-    } */
 
-
-
-    .about-h1 {
-        padding: 10px;
-      text-align: center;
-      background-color: #eae2d6;
-      color: black;
+    .carousel-caption p, .carousel-caption h5 {
+        color: red;
+        z-index: -1 !important;
     }
 
-       
-    .about-section p{
-      padding: 10px;
-      text-align: center;
-      background-color: #a9baa0;
-      color: black;
-    }
 
-    .about-section h1{
-        background-color:#ee5869;
-        color:black;
+    
+    .footer{
+        background-color: #e9253c;
+        color:#0F1108;
+    }
+    .footer-bottom{
+        text-align: center;  
+        margin-top: 30px;  
+        border-radius: 5px;
+        padding:30px 0px; 
+        font-weight: 600;
     }
