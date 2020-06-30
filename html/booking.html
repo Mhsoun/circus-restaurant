@@ -26,7 +26,7 @@
         <!-- END OF HEADER-->    
     
         <!-- Navigation -->
-        <nav class="navbar navbar-expand-lg navbar-dark navbar-custom container navbar-top" id="fixedNav">
+        <nav class="navbar navbar-expand-lg navbar-dark navbar-custom container sticky-top navbar-top" id="fixedNav">
         
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-custom" 
             aria-controls="navbar-custom" aria-expanded="false" aria-label="Toggle navigation">
@@ -65,71 +65,72 @@
     
         <input type="checkbox" id="cartToggle" name="toggle" />
 
+        <div class="container bodyblock p-4">
 
-        <!-- BOOKING FORM -->
-        <h1 class="bookingheading h-blue mt-5 mb-0">Welcome to Circus Show</h1>
-        
-        <div class="booking-form pt-4 text-center">
-            <form>
-                <div class="form-row justify-content-center">
+            <!-- BOOKING FORM -->
+            <h1 class="bookingheading h-blue mt-0 mb-0 p-2">Welcome to Circus Show</h1>
+            
+            <div class="booking-form pt-4 text-center">
+                <form>
+                    <div class="form-row justify-content-center">
+                        <div class="col-md-4 mb-3 ">
+                        <label><b>Select Date</b></label>
+                        <input type="text" name="date"class="form-control datepicker" value="yy-mm-dd" autocomplete="off">
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <label><b>Select Time</b></label>
+                            <select class="form-control" >
+                            <option>Select Time</option>
+                            <option>15:00</option>
+                            <option>17:00</option>
+                            <option>19:00</option>
+                            <option>21:00</option>
+                            </select>
+                        
+                        </div>
+                        </div>
+                    <div class="form-row justify-content-center">
+                    <div class="col-md-4 mb-3">
+                        <label><b>Select Adult</b></label>
+                        <input type="number" class="form-control" placeholder="select" max="15" min="1">
+                        </div>
                     <div class="col-md-4 mb-3 ">
-                      <label><b>Select Date</b></label>
-                      <input type="text" name="date"class="form-control datepicker" value="yy-mm-dd" autocomplete="off">
-                    </div>
-                    <div class="col-md-4 mb-3">
-                        <label><b>Select Time</b></label>
-                        <select class="form-control" >
-                          <option>Select Time</option>
-                          <option>15:00</option>
-                          <option>17:00</option>
-                          <option>19:00</option>
-                          <option>21:00</option>
-                        </select>
-                     
-                    </div>
-                    </div>
-                <div class="form-row justify-content-center">
-                  <div class="col-md-4 mb-3">
-                    <label><b>Select Adult</b></label>
-                      <input type="number" class="form-control" placeholder="select" max="15" min="1">
-                    </div>
-                  <div class="col-md-4 mb-3 ">
-                    <label><b>Select Child</b></label>
-                    <input type="number" class="form-control" placeholder="select" max="15" min="0">
-                    
-                  </div>
-                  </div>
-                  <div class="form-row justify-content-center">
-                    <div class="col-md-4 mb-3">
-                        <label><b>First Name</b></label>
-                        <input type="text" class="form-control"  placeholder="First Name">
-                    </div>
-                    <div class="col-md-4 mb-3">
-                        <label><b>Last name</b></label>
-                    <input type="text" class="form-control"placeholder="Last name">
+                        <label><b>Select Child</b></label>
+                        <input type="number" class="form-control" placeholder="select" max="15" min="0">
+                        
                     </div>
                     </div>
                     <div class="form-row justify-content-center">
                         <div class="col-md-4 mb-3">
-                            <label><b>Email</b></label>
-                            <input type="email" class="form-control"placeholder="name@example.com">
-                      </div>
+                            <label><b>First Name</b></label>
+                            <input type="text" class="form-control"  placeholder="First Name">
+                        </div>
                         <div class="col-md-4 mb-3">
-                          <label><b>Phone No</b></label>
-                          <input type="text" class="form-control"placeholder="x-xxxxxxxxx">
+                            <label><b>Last name</b></label>
+                        <input type="text" class="form-control"placeholder="Last name">
                         </div>
                         </div>
-                       
-                        <div class="text-center pt-4"> 
-                <button class="btn btn-primary mb-5" type="Book" >Book</button>
+                        <div class="form-row justify-content-center">
+                            <div class="col-md-4 mb-3">
+                                <label><b>Email</b></label>
+                                <input type="email" class="form-control"placeholder="name@example.com">
                         </div>
-              </form>
+                            <div class="col-md-4 mb-3">
+                            <label><b>Phone No</b></label>
+                            <input type="text" class="form-control"placeholder="x-xxxxxxxxx">
+                            </div>
+                            </div>
+                        
+                            <div class="text-center pt-4"> 
+                                <button class="btn btn-primary mb-5" type="Book" >Book</button>
+                            </div>
+                </form>
+            </div>
+            <!-- END OF BOOKING FORM -->
+
         </div>
-        <!-- END OF BOOKING FORM -->
-
-
         <!-- FOOTER -->
-        <div class="container  footer text-center mt-4">
+        <div class="container  footer text-center">
             <div class="row container">
                 <div class="col-md-4 container">
                     <h4 class="mt-4" id="contactus">Contact Details</h4>

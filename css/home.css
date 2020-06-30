@@ -15,6 +15,9 @@
     background-color: #eae2d6 ;
     }
 
+    .bodyblock{
+        background-color: #F5E6E8;
+    }
     .header{
     display:flex;
     background-color: #e9253c;
