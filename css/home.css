@@ -6,6 +6,9 @@
     #0F1108 Dark brown (Marshland?)
     #25271E Brown (Log Cabin)
 */
+    html {
+        scroll-behavior: smooth;
+    }
     body{
     margin: 0;
     padding :0;
@@ -36,11 +39,20 @@
         height: 80vh;
     }
 
+    .bg-transGreen{
+        background-color: rgba(238,244,212,0.4)
+    }
+
+    .vertical {
+        display: flex;
+        align-items: center;
+    }
+
     .navbar{
         height: 60px;
         width: 100%;
         /* position: fixed;*/
-        z-index: 10;
+        z-index: 3;
         border-radius: 0px;
         padding: 0px 100px;
         display: flex;

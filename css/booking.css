@@ -10,9 +10,15 @@
    text-align: center; 
 }
 .booking-form{
-    background-color:#003249;
-    color: White;
+    background-color:#EEF4D4;
+    color: #0C0A3E;
 }
+
+.h-blue, h4{
+    background-color:  #0C0A3E;
+    color: #EEF4D4;
+}
+
 .btn-primary{
     background-color: white;
     border-color:white;

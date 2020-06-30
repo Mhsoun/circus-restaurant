@@ -41,25 +41,25 @@ input{
 }
 
 .btnStyle:hover{
-	background-color: #874C62;
+	background-color: #E9253C;
 	box-shadow: 0px 3px 6px rgba(0, 0, 0, .16), 0px 6px 10px rgba(0, 0, 0, .23);
 	transform: scale(1.05, 1.05);
 }
 
 .btnStyle2{
-	background-color: #874C62;
+	background-color: #E9253C;
 }
 
 .btnStyle2:hover{
-	background-color: #C98474;
+	background-color: #F5E6E8;
 }
 
 .btnStyle3{
-	background-color: #A7D2CB;
+	background-color: #EEF4D4;
 }
 
 .btnStyle3:hover{
-	background-color: #F2D388;
+	background-color: #F5E6E8;
 }
 
 .toggleCart{
@@ -94,11 +94,11 @@ input{
 	right: -300px;
 	overflow-x: hidden;
 	overflow-y: scroll;
-	z-index: 1;
-	background-color: #874C62;
+	z-index: 4;
+	background-color: #0C0A3E;
 	padding: 30px;
 	box-shadow: 2px 0 20px 5px rgba(0, 0, 0, 0.24);
-
+    color:#EEF4D4;
 	transition: all 0.25s ease-in-out;
 }
 
@@ -207,7 +207,7 @@ input{
 }
 
 .cancelInput{
-	background-color: #B33232;
+	background-color: #E9253C;
 }
 
 .orderName {
@@ -224,7 +224,7 @@ hr {
 
 .delBtn {
     float: right;
-    color: #F2D388;
+    color: #F5E6E8;
     cursor: pointer;
 }
 
@@ -299,13 +299,13 @@ hr {
 .ui-dialog {
     z-index: 2;
   	box-shadow: 2px 0 20px 5px rgba(0, 0, 0, 0.24);
-  background-color: #fff;
-  padding: 30px;
+    background-color: #F5E6E8;
+    padding: 30px;
 }
 
 .ui-draggable-handle {
     position: absolute;
-    background-color: #A7D2CB;
+    background-color: #F5E6E8;
     width: 100%;
     top: 0;
     left: 0;
@@ -316,7 +316,7 @@ hr {
 }
 
 .ui-button {
-    background-color: #874C62;
+    background-color: #0F1108;
     border: none;
     border-radius: 3px;
     padding: 3px 5px;
@@ -326,7 +326,7 @@ hr {
 }
 
 .ui-button:hover{
-  background-color: #C98474;
+  background-color: #25271E;
   box-shadow: 0px 3px 6px rgba(0, 0, 0, .16), 0px 6px 10px rgba(0, 0, 0, .23);
 	transform: scale(1.05, 1.05);
 }

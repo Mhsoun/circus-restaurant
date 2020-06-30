@@ -1,20 +1,13 @@
 $(document).ready(function() {
-  
-
-	
-// 	$( "a" ).click(function( event ) {
-// 		event.preventDefault();
-//   });
-
 	var numOfOrders = 0;
 	$(".num").text(numOfOrders);
 
 	// hide dialogs on start
-	$("#thanksMessage, #checkOrderHamburger, #checkOrderChickenCurry, #checkOrderLammMalaba, #checkOrderMixVegetariskBalti, #checkOrderNaanbrod, #checkOrderRisotto, #finishOrderDialog").hide();
+	$("#checkOrderChickentikkamasala, #checkOrderChickenCurry, #checkOrderLammMalaba, #checkOrderMixVegetariskBalti, #checkOrderNaanbrod, #checkOrderRisotto, #finishOrderDialog").hide();
 
 	// open dialog on click
 	$("#addToCartTikkaMasala").on("click", function () {
-		$("#checkOrderHamburger").dialog({
+		$("#checkOrderChickentikkamasala").dialog({
 				hide: "blind",
             	show : "blind",
             	width: "400px",
@@ -62,34 +55,36 @@ $(document).ready(function() {
 	})
 
 	// increase/decrease the price of order if an item is added/removed
-	function checkboxChange(x) {
+	/*function checkboxChange(x) {
 		var priceDialog = 0;
 		$("#recipe"+x).children("li").children("input").each(function () {
-			if($(this).is(":checked")){
+			/*if($(this).is(":checked")){
 				priceDialog+=3;
-			}
-				$("#totalDialog"+x+">span").text(priceDialog);
-			$(this).change(function () {
+			}*/
+				/*$("#totalDialog1"+x+">span").text(priceDialog)*/
+			
+			/*$(this).change(function () {
 				if ($(this).is(":checked")) {
 					priceDialog += 3;
 					console.log(priceDialog);
-					$("#totalDialog"+x+">span").text(priceDialog);
-				}else{
+					$("#totalDialog1"+x+">span").text(priceDialog);
+				}
+			else{
 					priceDialog -= 3;
-					$("#totalDialog"+x+">span").text(priceDialog);
+					$("#totalDialog1"+x+">span").text(priceDialog);
 				}
 			})
 		});
-	}
+	}*/
 
-	$('#recipe1').children('li').click(checkboxChange(1));
+	/*$('#recipe1').children('li').click(checkboxChange(1));
 	$('#recipe2').children('li').click(checkboxChange(2));
 	$('#recipe3').children('li').click(checkboxChange(3));
-	$('#recipe3').children('li').click(checkboxChange(4));
-	$('#recipe3').children('li').click(checkboxChange(5));
-	$('#recipe3').children('li').click(checkboxChange(6));
+	$('#recipe4').children('li').click(checkboxChange(4));
+	$('#recipe5').children('li').click(checkboxChange(5));
+	$('#recipe6').children('li').click(checkboxChange(6));*/
 
-	$(".addIngredient").on("click", function () {
+	/*$(".addIngredient").on("click", function () {
 		// Creates input field and two buttons for adding an ingrediant that's not on the list
 		var inputIng = '<input type="text" id="newIngredient">';
 		var confirmInput = '<a class="btnStyle3 btnStyle confirmInput">&#10004;</a>';
@@ -107,16 +102,16 @@ $(document).ready(function() {
 				var newCheckbox = '<input type="checkbox" checked>';
         
         for (var i = 0; i < newIngredient.length; i++){
-         $(this).parent().siblings("ul").append("<li>" + newCheckbox + newIngredient[i] + "  (+3$)</li>");
+         $(this).parent().siblings("ul").append("<li>" + newCheckbox + newIngredient[i] + "  (+3SEK)</li>");
         }
 				
 
 				$('#recipe1').children('li').click(checkboxChange(1));
 				$('#recipe2').children('li').click(checkboxChange(2));
 				$('#recipe3').children('li').click(checkboxChange(3));
-				$('#recipe3').children('li').click(checkboxChange(4));
-				$('#recipe3').children('li').click(checkboxChange(5));
-				$('#recipe3').children('li').click(checkboxChange(6));
+				$('#recipe4').children('li').click(checkboxChange(4));
+				$('#recipe5').children('li').click(checkboxChange(5));
+				$('#recipe6').children('li').click(checkboxChange(6));
 
 				$(this).parent().remove();
 			}else{
@@ -127,12 +122,12 @@ $(document).ready(function() {
 		$(".addIngredientWrap > .cancelInput").on("click", function () {
 			$(this).parent().remove();
 		})
-	})// add ingredient button
+	})// add ingredient button*/
 
 	$(".listOver").on("click", function () {
 		var orderName = '<h3 class="orderName"><span>' + $(this).parent().siblings(".ui-dialog-titlebar").children("span").text() + '</span><a class="delBtn">&#10008;</a>' +'</h3>';
 		var orderIngredients = '<ul class="orderIngredients"></ul>';
-		var orderPrice = '<h3 class="orderPrice"><span>' + $(this).parent().children(".totalDialog").children("span").text() + '</span>$<h3>'
+		var orderPrice = '<h3 class="orderPrice"><span>' + $(this).parent().children(".totalDialog").children("span").text() + '</span>SEK<h3>'
 		var horisontalLine = '<hr>';
 		$(".cart").children("#listOfOrders").append("<li>" + orderName + orderIngredients + orderPrice + horisontalLine + "</li>");
 
@@ -158,14 +153,14 @@ $(document).ready(function() {
 		$("#listOfOrders").children("li").children(".orderPrice").children("span").each(function () {
 			var price = parseFloat($(this).text());
 			totalOrderPrice += price;
-			$(".cart > h3 > span").text(totalOrderPrice + "$");
+			$(".cart > h3 > span").text(totalOrderPrice + "SEK");
 		});
 
 		// remove order from cart
 		$(".delBtn").on("click", function () {
 			var removePrice = $(this).parent().parent().children(".orderPrice").children("span").text();
 			totalOrderPrice -= removePrice;
-			$(".cart > h3 > span").text(totalOrderPrice + "$");
+			$(".cart > h3 > span").text(totalOrderPrice + "SEK");
 
 			$(this).parents("li").remove();
 			numOfOrders = $("#listOfOrders").children().length;
@@ -173,7 +168,7 @@ $(document).ready(function() {
 		})
 	}); // List over (done button)
 
-	$(".finishOrder").on("click", function () {
+	/*$(".finishOrder").on("click", function () {
      $("#finalOrderList > ol").children().remove();
 		$(".orderName").children("span").each(function(){
 			var finalOrder = '<li>' + $(this).text() + '</li>';
@@ -207,8 +202,26 @@ $(document).ready(function() {
 		}else{
 			$("#buyerInfo").append('<p>Fill up all the inputs</p>');
 		}
-	})
-
+	})*/
+		//date picker
+		var date = new Date();
+		date.setDate(date.getDate()-1);
+	
+		//disable past date
+		$('.datepicker').datepicker({ 
+			startDate: date
+		});
+		
+		//disable some days of the week
+		$('.datepicker').datepicker({
+		daysOfWeekDisabled:[0,1,2,3,4]
+		});
+		
+		//submit form
+		$(".btn").on("click", function(){
+		alert("Booking is confirmed");
+		});
+	
 })
 
 
@@ -218,4 +231,5 @@ function disableDates(){
 	});
 	$(".btn").click(function(){
 		alert("Booking is confirmed");
-	  });}
+	  });
+	}
