@@ -10,8 +10,9 @@
 
     html {
         scroll-behavior: smooth;
-      }
-      
+
+    }
+
 
     body{
     margin: 0;
@@ -104,3 +105,11 @@
         padding:30px 0px; 
         font-weight: 600;
     }
+
+    
+@media screen and (max-width: 770px) and (min-width: 570px) {
+    div{
+        font-size: 0.8rem;
+
+    }
+}
